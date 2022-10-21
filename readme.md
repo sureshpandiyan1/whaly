@@ -127,6 +127,10 @@ driver.quit
 | --about   | about whaly <br> whaly --about                                 |
 
 
+# main focus of whaly
+    - anybody can use without any prior programming knowledge
+    - easy to use
+
 
 # copyright & license
 
