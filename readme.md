@@ -47,6 +47,8 @@ because words better than codes.it's written in ruby language.
 
 after you completely written it, just stop it ctrl + c
 
+## whaly automatically write a selenium based by whaly
+![Video_2022_10_21-5_edit_1](https://user-images.githubusercontent.com/112636345/197127611-9c892735-b975-4f49-8afa-bce644bb8b51.gif)
 
 # list of all valid whaly - pre-release
 
