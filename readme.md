@@ -20,6 +20,35 @@ because words better than codes.it's written in ruby language.
     -pre-relase
     
     Note: maybe it's contains few bugs
+    
+
+# highlights
+- you can write words instead of codes
+- runs smoothly without delay
+- other way to write selenium scripts
+- builtin ruby
+
+
+# how to setup ?
+
+    In your bash,
+    alias whaly='bash whalys/whaly-runner.sh'
+
+
+# how to run ?
+    
+    whaly <your text filename> [--options]
+    
+    Example:
+        whaly google.txt --create
+
+
+# demo
+
+![whalyy_dmeo_edit_1](https://user-images.githubusercontent.com/112636345/197121916-ba5e7884-0078-417b-9929-4824d0f9e67c.gif)
+
+after you completely written it, just stop it ctrl + c
+
 
 # list of all valid whaly - pre-release
 
@@ -38,24 +67,6 @@ because words better than codes.it's written in ruby language.
     f for firefox
     i for ie
 
-# highlights
-- you can write words instead of codes
-- runs smoothly without delay
-- other way to write selenium scripts
-- builtin ruby
-
-
-# how to setup ?
-
-    In your bash,
-    alias whaly='bash whalys/whaly-runner.sh'
-
-# how to run ?
-    
-    whaly <your text filename> [--options]
-    
-    Example:
-        whaly google.txt --create
 
 # Try this Example below:
 
@@ -80,6 +91,9 @@ stop-whaly-engine -quit
 ```
 ### output: 
 ### this file automatically located at whalytest-scripts/whalytest_demo.txt.rb
+
+![directory](https://user-images.githubusercontent.com/112636345/197121966-edeb1210-190f-4c3f-847c-f6619e655d02.jpg)
+
 ```
 require 'selenium-webdriver'
 
@@ -94,14 +108,9 @@ sleep 2
 driver.quit
 ```
 
+# code comparsion
 
-# demo video
-
-
-
-
-
-after you completely written it, just stop it ctrl + c
+![code_comparsion](https://user-images.githubusercontent.com/112636345/197122004-dbddac85-91d9-4e05-89e3-5c6f2d266bf7.png)
 
 
 
@@ -112,6 +121,7 @@ after you completely written it, just stop it ctrl + c
 | --run     | complier the file continously <br> whaly [your filename] --run |
 | --create  | create a file format to ruby <br> whaly [filename] --create    |
 | --about   | about whaly <br> whaly --about                                 |
+
 
 
 # copyright & license
