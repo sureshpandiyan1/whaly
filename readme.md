@@ -1,17 +1,15 @@
 
 
-<div align="left">
-<h1> whaly</h1>
-</div>
-<div align="left">
+<div align="center">
+
+![whaly_logo](https://user-images.githubusercontent.com/112636345/197125026-49d38ff2-07e9-4f53-ac38-3df5dd6746ea.png)
+
 <a href="https://github.com/sureshpandiyan1/whaly/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/sureshpandiyan1/whaly"></a>
 <a href="https://github.com/sureshpandiyan1/whaly/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/sureshpandiyan1/whaly"></a>
 <a href="https://github.com/sureshpandiyan1/whaly//issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/sureshpandiyan1/whaly"></a>
 </div>
 
-<br>
-
-# whaly
+# Description
 
 whaly is the easy way to write a browser-based selenium scripts.It's fully focused on the words,
 because words better than codes.it's written in ruby language.
