@@ -118,6 +118,31 @@ while counter < z
             s =   values[counter].to_s.split("deselect-by")[1].split("-")[1]
             m =   values[counter].to_s.split("deselect-by")[1].split("-")[2]
             game << format("Selenium::WebDriver::Support::Select.new(driver.find_element(:%s, %s)).deselect_by(%s,%s)",b,a,s,m)
+        elsif storeit[counter][ps.find_index("add-cookies").to_i + 1] == "{"
+            chk = {}
+            lzz = 0
+            storeit[counter].each do |ll|
+                chk[lzz] = ll
+                lzz += 1
+            end
+            zd = chk.values.to_s.split(",").reject { |ll| ll.include?(",") || ll.include?("   ") || ll.include?("add-cookies")}
+            py = zd.to_s.split("").reject { |lkjn| lkjn.include?("\"") || lkjn.include?("add-cookies") || lkjn.include?("]") || lkjn.include?("[") || lkjn.include?("\\") || lkjn.include?("{") || lkjn.include?("}")}
+            pkj = []
+            py.each do |lkjj|
+                pkj << lkjj.sub(",","").sub("   ","")
+            end
+            polm = pkj.join("").sub("     ",",")
+            game << "driver.manage.add_cookie(#{polm.sub("   ","")})"
+        elsif storeit[counter][ps.find_index("show").to_i + 1] == "l-all-cookies"
+            game << "driver.manage.all_cookies"
+        elsif storeit[counter][ps.find_index("del").to_i + 1] == "d-all-cookies"
+            game << "driver.manage.delete_all_cookies"
+        elsif storeit[counter][ps.find_index("show").to_i + 1] == "-Scookies"
+            ik = storeit[counter].reject { |lzp| lzp.include?("-") || lzp.include?("show")}
+            game << format("driver.manage.cookie_named(%s)",ik[0])
+        elsif storeit[counter][ps.find_index("show").to_i + 1] == "-Dcookies"
+            ik = storeit[counter].reject { |lzp| lzp.include?("-") || lzp.include?("del")}
+            game << format("driver.manage.delete_all_cookies(%s)",ik[0])
         elsif storeit[counter].length < 2
             game << "\n"
         elsif storeit[counter][ps.find_index("delay-for").to_i]
