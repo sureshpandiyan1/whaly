@@ -1,6 +1,6 @@
 {
   "name": "whaly",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "whaly is the easy way to write a browser-based selenium scripts.It's fully focused on the words,because words better than codes.it's written in ruby language.",
   "main": "index.js",
   "scripts": {
