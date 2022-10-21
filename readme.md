@@ -56,7 +56,7 @@ after you completely written it, just stop it ctrl + c
 |---------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
 | @import - whaly-engine                                  | require 'selenium-webdriver'                                                                                |
 | whaly-start-engine c                                    | driver = Selenium::WebDriver.for(:chrome)                                                                   |
-| go to the url 'https://www.google.com'                  | driver.navigate.to('https://www.google.com')                                                                |
+| go to the url "https://www.google.com"                  | driver.navigate.to('https://www.google.com')                                                                |
 | find name is 'q' .click                                 | driver.find_element(:name, 'q' ).click                                                                      |
 | delay-for 0.2                                           | sleep 0.2                                                                                                   |
 | select name isz 'animals' and select-by - value - 'dog' | Selenium::WebDriver::Support::Select.new(driver.find_element(:name,  'animals' )).select_by( value , 'dog') |
