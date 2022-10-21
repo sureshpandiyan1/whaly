@@ -19,7 +19,10 @@ because words better than codes.it's written in ruby language.
     
     Note: maybe it's contains few bugs
     
-
+## packages avaliable for install too
+    npm i whaly
+    
+    
 # highlights
 - you can write words instead of codes
 - runs smoothly without delay
