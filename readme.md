@@ -27,8 +27,8 @@ because words better than codes.it's written in ruby language.
 # highlights
 - you can write words instead of codes
 - runs smoothly without delay
-- other way to write selenium scripts
 - builtin ruby
+- easy to use
 
 
 # how to setup ?
