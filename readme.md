@@ -68,7 +68,7 @@ after you completely written it, just stop it ctrl + c
 | delay-for 0.2                                           | sleep 0.2                                                                                                   |
 | select name isz 'animals' and select-by - value - 'dog' | Selenium::WebDriver::Support::Select.new(driver.find_element(:name,  'animals' )).select_by( value , 'dog') |
 | stop-whaly-engine -quit                                 | driver.quit                                                                                                 |
-| add-cookies { name: 'sadfasdf' , key: 'ads'}            | driver.manage.add_cookie(name:  'sadfasdf',key:  'ads')                                                     |
+| add-cookies { name: 'hello' , value: 'howareyou' , same_site: 'Strict'} | driver.manage.add_cookie(name:  'hello',value:  'howareyou',same_site:  'Strict')           |
 | show l-all-cookies                                      | driver.manage.all_cookies                                                                                   |
 | show -Scookies - 'foo'                                  | driver.manage.cookie_named('foo')                                                                           |
 | del -Dcookies  - 'foo'                                  | driver.manage.delete_all_cookies('foo')                                                                     |
