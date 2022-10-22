@@ -10,6 +10,7 @@
 <a href="https://github.com/sureshpandiyan1/whaly//issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/sureshpandiyan1/whaly"></a>
 <img alt="npm" src="https://img.shields.io/npm/dt/whaly?label=npm-downloads">
 <img alt="GitHub" src="https://img.shields.io/github/license/sureshpandiyan1/whaly">
+    
 </div>
 
 # Description
