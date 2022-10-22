@@ -92,9 +92,6 @@ while counter < z
         elsif storeit[counter][ps.find_index("go").to_i + 3] == "url"
             l = storeit[counter][ps.find_index("url").to_i + 1]
             game << format("driver.navigate.to(%s)",l.split("\"]")[0]) 
-        # elsif storeit[counter][ps.find_index("get")]
-        #     z = storeit[counter]
-        #     game <<  storeit[counter]
         elsif storeit[counter][ps.find_index("find").to_i + 2] == "is"
             a = storeit[counter][ps.find_index("find").to_i + 1]
             rej =  storeit[counter].reject { |ll| ll.include?("is")}
@@ -126,13 +123,21 @@ while counter < z
                 lzz += 1
             end
             zd = chk.values.to_s.split(",").reject { |ll| ll.include?(",") || ll.include?("   ") || ll.include?("add-cookies")}
-            py = zd.to_s.split("").reject { |lkjn| lkjn.include?("\"") || lkjn.include?("add-cookies") || lkjn.include?("]") || lkjn.include?("[") || lkjn.include?("\\") || lkjn.include?("{") || lkjn.include?("}")}
+            py = zd.to_s.split("").reject { |lkjn| lkjn.include?("\"") || lkjn.include?("add-cookies") || lkjn.include?("]") || lkjn.include?("[") || lkjn.include?("\\") || lkjn.include?("{")}
             pkj = []
             py.each do |lkjj|
-                pkj << lkjj.sub(",","").sub("   ","")
+                pkj << lkjj.sub(",","")
             end
-            polm = pkj.join("").sub("     ",",")
-            game << "driver.manage.add_cookie(#{polm.sub("   ","")})"
+            polm = pkj.join("").sub("   ","")
+            pjk = []
+            polm.to_s.split("     ") do |plkjm|
+                pjk.push(plkjm + ',')
+            end
+            singleline = ''
+            pjk.each do |plkj|
+                singleline += plkj
+            end
+            game << "driver.manage.add_cookie(#{singleline.sub("},","")})"
         elsif storeit[counter][ps.find_index("show").to_i + 1] == "l-all-cookies"
             game << "driver.manage.all_cookies"
         elsif storeit[counter][ps.find_index("del").to_i + 1] == "d-all-cookies"
