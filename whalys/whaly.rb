@@ -58,6 +58,19 @@ votes.each do |thehow|
 end
 
 
+ppp = []
+
+fileopener(ARGV[0]).each do |plm|
+    ppp << plm.split("\n")
+end
+
+plm = 0
+sz = []
+ppp.each do |how|
+    sz.push(how.to_s.split(" "))
+    plm += 1
+end
+
 z = storeit.length
 
 counter = 0
@@ -79,6 +92,26 @@ while counter < z
             }
             engine = storeit[counter][ps.find_index("start-whaly-engine").to_i + 1]
             game << format("driver = Selenium::WebDriver.for(:%s)",engine_values[engine])
+        elsif sz[counter].find_index("keyboard") || sz[counter].find_index("mouse")
+            pppp = []
+            pppp << sz[counter].to_s.sub("[","").sub("]","")
+        
+            rejectwords = pppp.to_s.split("\n").to_s.chars
+            removeit = rejectwords.reject { |lop| lop.include?("[") || lop.include?("]") || lop.include?("\"") || lop.include?("\\") || lop.include?(", ")}
+             
+            zu = []
+            
+            removeit.join("").split("I/O") do |lll|
+                if lll
+                    zu << "driver.action." + lll.to_s.sub(" mouse,","").sub(" keyboard,","").sub(", ","").sub(", =>, "," => ").sub(", "," ").sub(", "," ").sub(", "," ")
+                end
+            end
+        
+            rej = zu.reject { |llkm| llkm if llkm == "driver.action."}
+        
+            rej.each do |lolo|
+                game << lolo
+            end
         elsif storeit[counter][ps.find_index("stop-whaly-engine").to_i + 1] == '-quit'
                 engine = storeit[counter][ps.find_index("stop-whaly-engine").to_i + 1]
                 engine_values = {
