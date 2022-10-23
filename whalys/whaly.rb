@@ -80,6 +80,7 @@ game = []
 # z = []
 while counter < z
         ps = storeit[counter]
+        history = { '<--' => 'driver.navigate.back', '-->' => 'driver.navigate.forward', 'refresh' => 'driver.navigate.refresh'}
         if storeit[counter][ps.find_index("@import").to_i + 1] == "-"
             valz = {'whaly-engine' => 'selenium-webdriver',
                     'whaly-gems' => 'rubygems'}
@@ -92,6 +93,12 @@ while counter < z
             }
             engine = storeit[counter][ps.find_index("start-whaly-engine").to_i + 1]
             game << format("driver = Selenium::WebDriver.for(:%s)",engine_values[engine])
+        elsif storeit[counter].find_index("<--") 
+            game << history['<--']
+        elsif storeit[counter].find_index("-->") 
+            game << history['-->']
+        elsif storeit[counter].find_index("refresh!!") 
+            game << history['refresh']
         elsif sz[counter].find_index("keyboard") || sz[counter].find_index("mouse")
             pppp = []
             pppp << sz[counter].to_s.sub("[","").sub("]","")
