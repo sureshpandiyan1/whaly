@@ -73,6 +73,9 @@ after you completely written it, just stop it ctrl + c
 | show -Scookies - 'foo'                                  | driver.manage.cookie_named('foo')                                                                           |
 | del -Dcookies  - 'foo'                                  | driver.manage.delete_all_cookies('foo')                                                                     |
 | del d-all-cookies                                       | driver.manage.delete_all_cookies                                                                            |
+| I/O keyboard key-up:(shift).send-keys(4,2).key-down.('how are you').send-keys(:shift).perform | driver.action.key-up:(shift).send-keys(4,2).key-down.('how are you').send-keys(:shift).perform  |
+
+
 
     whaly-start-engine 
     c for chrome
