@@ -35,6 +35,7 @@ if [ $2  == '--run' ]; then
 echo "running from whalytest_$1.rb file"
 while true
 do
+sleep 0.2
 ruby whalys/whaly.rb $1
 mv whalytest_$1.rb whalytest-scripts/
 echo "whaly engine is running until you press ctrl + c to stop"
