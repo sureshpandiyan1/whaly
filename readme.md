@@ -19,7 +19,7 @@ whaly is the easy way to write a browser-based selenium scripts.It's fully focus
 because words better than codes.it's written in ruby language.
 
 ## Phase
-    -pre-relase
+    -pre-release
     
     Note: maybe it's contains few bugs
     
