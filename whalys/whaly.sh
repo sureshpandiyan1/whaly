@@ -23,7 +23,7 @@ fi
 
 if [[ -f $1  &&  $2 = '--create' ]]; then
 ruby whalys/whaly.rb $1
-mkdir whalytest-scripts
+test -d whalytest-scripts || mkdir whalytest-scripts
 mv whalytest_$1.rb whalytest-scripts/
 arr=($1)
 echo "process the file -  $1"
