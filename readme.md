@@ -50,12 +50,14 @@ because words better than codes.it's written in ruby language.
 
 # demo
 
-![whalyy_dmeo_edit_1](https://user-images.githubusercontent.com/112636345/197121916-ba5e7884-0078-417b-9929-4824d0f9e67c.gif)
+[whaly_demos_edit_0.webm](https://user-images.githubusercontent.com/112636345/197678607-a462856a-4c49-4345-a625-45edcb7ce2a9.webm)
+
+## whaly automatically write a selenium based by whaly
+
+![whaly_dd_edit_0_edit_4](https://user-images.githubusercontent.com/112636345/197680695-9edd9d0d-dc45-4faa-b462-7188a3abb1f5.gif)
 
 after you completely written it, just stop it ctrl + c
 
-## whaly automatically write a selenium based by whaly
-![Video_2022_10_21-5_edit_1](https://user-images.githubusercontent.com/112636345/197127611-9c892735-b975-4f49-8afa-bce644bb8b51.gif)
 
 # list of all valid whaly - pre-release
 
