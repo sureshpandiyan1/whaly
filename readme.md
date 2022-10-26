@@ -23,7 +23,7 @@ because words better than codes.it's written in ruby language.
     
     Note: maybe it's contains few bugs
     
-## packages avaliable for install too
+## packages avaliable for install:
     npm i whaly
     
     
