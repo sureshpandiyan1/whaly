@@ -8,7 +8,6 @@
 <a href="https://github.com/sureshpandiyan1/whaly/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/sureshpandiyan1/whaly"></a>
 <a href="https://github.com/sureshpandiyan1/whaly/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/sureshpandiyan1/whaly"></a>
 <a href="https://github.com/sureshpandiyan1/whaly//issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/sureshpandiyan1/whaly"></a>
-<img alt="npm" src="https://img.shields.io/npm/dt/whaly?label=npm-downloads">
 <img alt="GitHub" src="https://img.shields.io/github/license/sureshpandiyan1/whaly">
     
 </div>
@@ -16,16 +15,24 @@
 # Description
 
 whaly is the easy way to write a browser-based selenium scripts.It's fully focused on the words,
-because words better than codes.it's written in ruby language.
+because words better than codes.it's written in ruby language.it's only compatible for linux platform.
 
+## pre-release version
+    
+    v1.0.5
+
+
+# Pre-requisite
+
+    - need to install ruby 
+    - compatible only for linux platform (but not for windows platform)
+    
+    
 ## Phase
     -pre-release
     
     Note: maybe it's contains few bugs
-    
-## packages avaliable for install:
-    npm i whaly
-    
+
     
 # highlights
 - you can write words instead of codes
