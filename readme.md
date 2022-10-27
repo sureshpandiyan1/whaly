@@ -8,6 +8,7 @@
 <a href="https://github.com/sureshpandiyan1/whaly/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/sureshpandiyan1/whaly"></a>
 <a href="https://github.com/sureshpandiyan1/whaly/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/sureshpandiyan1/whaly"></a>
 <a href="https://github.com/sureshpandiyan1/whaly//issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/sureshpandiyan1/whaly"></a>
+<img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/sureshpandiyan1/whaly">
 <img alt="GitHub" src="https://img.shields.io/github/license/sureshpandiyan1/whaly">
     
 </div>
@@ -19,7 +20,7 @@ because words better than codes.it's written in ruby language.it's only compatib
 
 ## pre-release version
     
-    v1.0.5
+    v1.0.4
 
 
 # Pre-requisite
