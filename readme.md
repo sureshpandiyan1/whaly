@@ -19,7 +19,7 @@
 whaly is the easy way to write a browser-based selenium scripts.It's fully focused on the words,
 because words better than codes.it's written in ruby language.it's only compatible for linux platform.
 
-## you can install via gem
+## you can install via gem & guidelines how to use whaly gem
 
     gem install whaly
     
