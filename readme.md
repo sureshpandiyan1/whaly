@@ -82,7 +82,7 @@ because words better than codes.it's written in ruby language.it's only compatib
         whaly google.txt --create
 
 
-# demo for git users
+# demo (windows/bash)
 
 [whaly_demos_edit_0.webm](https://user-images.githubusercontent.com/112636345/197678607-a462856a-4c49-4345-a625-45edcb7ce2a9.webm)
 
@@ -168,7 +168,7 @@ driver.quit
 
 
 
-# list of whaly shell commands
+# list of whaly shell commands (not for ruby gems)
 
 | arguments | definition                                                     |
 |-----------|----------------------------------------------------------------|
