@@ -23,7 +23,7 @@ because words better than codes.it's written in ruby language.it's only compatib
 
     gem install whaly
     
-    ## how to use
+    ## guidelines for ruby users
     
     step1: create a your own empty filename, Example: 'test_google.txt'
     step2: create a new .rb file, Example: 'whaly-file.rb'
@@ -32,7 +32,7 @@ because words better than codes.it's written in ruby language.it's only compatib
         my_whaly = Whaly.new()
         my_whaly.whaly_s('test_google.txt')
        
-     step3:  whaly-file.rb
+     step3:  run whaly-file.rb in your terminal, Example: whaly-file.rb
      
      "whaly engine is running until you press ctrl + c to stop"
      
@@ -82,7 +82,7 @@ because words better than codes.it's written in ruby language.it's only compatib
         whaly google.txt --create
 
 
-# demo
+# demo for git users
 
 [whaly_demos_edit_0.webm](https://user-images.githubusercontent.com/112636345/197678607-a462856a-4c49-4345-a625-45edcb7ce2a9.webm)
 
