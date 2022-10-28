@@ -18,6 +18,30 @@
 whaly is the easy way to write a browser-based selenium scripts.It's fully focused on the words,
 because words better than codes.it's written in ruby language.it's only compatible for linux platform.
 
+## you can install via gem
+
+    gem install whaly
+    
+    ## how to use
+    
+    step1: create a your own empty filename, Example: 'test_google.txt'
+    step2: create a new .rb file, Example: 'whaly-file.rb'
+        require 'whaly'
+        
+        my_whaly = Whaly.new()
+        my_whaly.whaly_s('test_google.txt')
+       
+     step3:  whaly-file.rb
+     
+     "whaly engine is running until you press ctrl + c to stop"
+     
+     step4: you are ready to write whaly codes in demo.txt, 
+            it will convert to selenium code in whalytest_test_google.txt.rb
+            
+     if you want to stop the whaly-engine, just press ctrl + c at terminal for stop
+     
+     
+        
 ## pre-release version
     
     v1.0.4
@@ -27,7 +51,8 @@ because words better than codes.it's written in ruby language.it's only compatib
 
     - need to install ruby 
     - compatible only for linux platform (but not for windows platform)
-    
+
+
     
 ## Phase
     -pre-release
