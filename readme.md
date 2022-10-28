@@ -10,7 +10,7 @@
 <a href="https://github.com/sureshpandiyan1/whaly//issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/sureshpandiyan1/whaly"></a>
 <img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/sureshpandiyan1/whaly">
 <img alt="GitHub" src="https://img.shields.io/github/license/sureshpandiyan1/whaly">
-<img alt="whaly"  src="https://img.shields.io/badge/gem-whaly-red">
+<a href="https://badge.fury.io/rb/whaly"><img src="https://badge.fury.io/rb/whaly.svg" alt="Gem Version" height="18"></a>
     
 </div>
 
